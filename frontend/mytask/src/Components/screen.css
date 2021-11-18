@@ -1,0 +1,7 @@
+.screen {
+  /* display: flex; */
+  flex: 1;
+  padding: 10px 10px;
+  font-size: large;
+  /* border: 1px solid black; */
+}

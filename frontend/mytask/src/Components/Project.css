@@ -1,0 +1,31 @@
+.project_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project_header > h4 {
+  margin: 10px !important;
+}
+.project_header > button {
+  color: white;
+  background-color: rgb(47, 122, 106);
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  font-size: medium;
+  align-self: center;
+  width: 300px;
+}
+.taskList {
+  margin-top: 20px;
+  height: 70vh;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid rgb(109, 106, 106); */
+  /* justify-content: space-evenly; */
+}
+
+.taskList::-webkit-scrollbar {
+  visibility: hidden;
+}

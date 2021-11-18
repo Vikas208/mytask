@@ -1,0 +1,34 @@
+.form {
+  display: none;
+  justify-content: center;
+  position: relative;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  padding: 10px;
+}
+.form > span {
+  align-self: flex-end;
+  cursor: pointer;
+}
+.form > form {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+.form > form > input,
+.form > form > textarea {
+  max-height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(116, 115, 115);
+  margin: 10px;
+  font-size: medium;
+}
+.form > form > button {
+  border: none;
+  color: white;
+  background-color: rgb(22, 145, 59);
+  padding: 10px;
+  cursor: pointer;
+  font-size: medium;
+}

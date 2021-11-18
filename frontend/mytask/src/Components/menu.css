@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: right;
+  /* border: 1px solid black; */
+  width: 100%;
+  margin: 5px;
+  cursor: pointer;
+}
+.menu > span {
+  margin: 5px;
+  color: #053868;
+}
+.menu > a {
+  margin: 5px;
+  color: #053868;
+  text-decoration: none;
+}
+.menu:hover > span,
+.menu:hover > a {
+  color: #3e4447;
+}
+
+.menu:hover > .delete {
+  /* display: block; */
+  visibility: visible;
+}
+
+.delete {
+  /* font-size: 20px; */
+  /* display: none; */
+  visibility: hidden;
+  float: right;
+  /* transition: visibility 200ms ease; */
+}

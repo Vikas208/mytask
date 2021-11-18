@@ -1,0 +1,23 @@
+.newProject > form {
+  display: flex;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 3px;
+}
+.newProject > form > button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: bold;
+  flex: 0.2;
+}
+.newProject > form > input {
+  flex: 0.8;
+  border: none;
+  outline: none;
+  font-size: large;
+}

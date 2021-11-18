@@ -1,0 +1,72 @@
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  max-width: 250px;
+  border-radius: 2px;
+  padding: 5px 20px;
+  padding-top: 15px;
+  margin: 5px;
+  height: fit-content;
+  /* margin-bottom: 20px; */
+}
+.task_header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid gainsboro;
+}
+.task_header > input {
+  margin-left: 5px;
+  font-size: larger;
+  width: 200px;
+  outline: none;
+  border: none;
+  word-wrap: normal;
+}
+.task_body {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 250px;
+  align-self: center;
+  font-size: 15px;
+  overflow: auto;
+  height: fit-content;
+  border-bottom: 1px solid gainsboro;
+}
+.task_body > textarea {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: "Roboto";
+  word-wrap: normal;
+  height: fit-content;
+}
+.task_body::-webkit-scrollbar {
+  visibility: hidden;
+}
+.task_footer {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid gainsboro;
+}
+.icons {
+  display: flex;
+}
+.icons > span {
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons > span,
+.task_footer > span {
+  color: rgb(127, 134, 133);
+}
+.time {
+  font-size: 15px;
+}
