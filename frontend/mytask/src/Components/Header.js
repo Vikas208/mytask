@@ -6,8 +6,12 @@ function Header() {
   console.log(user);
   return (
     <div className="header">
-      <img src={user?.photoURL} alt="" />
-      <p>{user?.displayName}</p>
+      {user &&
+        <>
+          <img src={user?.photoURL} alt="" />
+          <p>{user?.displayName}</p>
+        </>
+      }
     </div>
   );
 }

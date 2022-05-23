@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 require("dotenv").config({ path: "../config.env" });
 
-const uri = `mongodb+srv://vikas:${process.env.PASSWORD}@cluster0.mzw6b.mongodb.net/MyTask?retryWrites=true&w=majority`;
+const uri = process.env.URI;
 
 const mongoConnect = () => {
   try {

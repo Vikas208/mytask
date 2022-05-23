@@ -16,6 +16,10 @@
   margin: 5px;
   color: #053868;
   text-decoration: none;
+  /* border: 1px solid black; */
+  word-wrap: break-word;
+  line-height: 20px;
+  text-align: end;
 }
 .menu:hover > span,
 .menu:hover > a {

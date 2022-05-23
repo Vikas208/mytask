@@ -22,6 +22,10 @@ function Projects() {
 
   useEffect(() => {
     fetchTasks();
+
+    return () => {
+      settask([]);
+    }
   }, [project]);
 
   return (
@@ -39,7 +43,7 @@ function Projects() {
             className="material-icons "
             style={{ fontSize: "25px", cursor: "pointer" }}
             onClick={() => {
-              console.log("reload");
+              // console.log("reload");
               fetchTasks();
             }}
           >
@@ -60,7 +64,8 @@ function Projects() {
 
         <div className="taskList">
           {takslist &&
-            takslist?.map((element) => {
+            typeof takslist === 'object'
+            ? takslist?.map((element) => {
               console.log(element);
               return (
                 <Task
@@ -72,7 +77,12 @@ function Projects() {
                   key={element?.title}
                 />
               );
-            })}
+            })
+            : console.log(
+              "Loading"
+            )
+            // <span>Loading...</span>
+          }
         </div>
       </div>
     </div>

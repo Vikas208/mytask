@@ -44,6 +44,7 @@
   font-family: "Roboto";
   word-wrap: normal;
   height: fit-content;
+  resize: vertical;
 }
 .task_body::-webkit-scrollbar {
   visibility: hidden;

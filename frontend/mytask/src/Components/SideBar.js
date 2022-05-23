@@ -44,7 +44,8 @@ function SideBar() {
           </div>
           <hr />
           <div className="projects">
-            {projects &&
+            {projects && typeof projects === 'object' &&
+              projects ? (
               projects.map((element) => {
                 return (
                   <Menu
@@ -54,7 +55,10 @@ function SideBar() {
                     key={element?.project}
                   />
                 );
-              })}
+              })
+            ) : (
+              <span>Loading...</span>
+            )}
           </div>
         </div>
         <div className="bottom_menu">
